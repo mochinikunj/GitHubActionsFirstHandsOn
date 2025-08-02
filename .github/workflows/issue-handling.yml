@@ -1,0 +1,10 @@
+name: Issue handling
+on: issues
+jobs:
+  OutputDetials:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output the details
+        run: |
+          echo "Hello World!"
+          echo "${{ github }}"
